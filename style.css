@@ -198,6 +198,11 @@ ul {
   background-color: #d96b45;
 }
 
+.featured-project {
+  border: 2px solid #F08058;
+  background: linear-gradient(135deg, #ffffff, #fff7ed);
+}
+
 footer {
   text-align: center;
   padding: 2rem;
@@ -274,5 +279,55 @@ footer {
   .navbar a {
     white-space: nowrap;
     font-size: 0.85rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .projects {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projects article {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    grid-template-areas:
+      "title tags"
+      "description tags"
+      "links tags";
+    gap: 1.2rem 2rem;
+    align-items: start;
+    padding: 2rem;
+  }
+
+  .projects article h3 {
+    grid-area: title;
+    margin-bottom: 0;
+  }
+
+  .projects article p {
+    grid-area: description;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .tags {
+    grid-area: tags;
+    align-self: start;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .project-links {
+    grid-area: links;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+  }
+
+  .project-links a {
+    white-space: nowrap;
   }
 }
