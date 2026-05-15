@@ -205,21 +205,74 @@ footer {
 }
 
 @media (max-width: 768px) {
+  main {
+    width: 94%;
+    margin: 2rem auto;
+  }
+
+  .card {
+    padding: 1.4rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 5rem 1.5rem 3rem;
+  }
+
   .hero h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    line-height: 1.2;
   }
 
-  .navbar ul {
-    gap: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .navbar a {
-    font-size: 0.9rem;
+  .hero p {
+    font-size: 1rem;
   }
 
   .projects {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .projects article {
+    padding: 1.25rem;
+  }
+
+  .projects article p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .tags {
+    gap: 0.4rem;
+  }
+
+  .tags span {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.55rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-links a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar {
+    padding: 0.7rem 0.5rem;
+  }
+
+  .navbar ul {
+    justify-content: flex-start;
+    gap: 0.8rem;
+    overflow-x: auto;
+    padding: 0 0.8rem;
+  }
+
+  .navbar a {
+    white-space: nowrap;
+    font-size: 0.85rem;
   }
 }
