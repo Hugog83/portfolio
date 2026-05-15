@@ -159,6 +159,45 @@ ul {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tags span {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background-color: #fff7ed;
+  color: #F08058;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background-color: #F08058;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+  background-color: #d96b45;
+}
+
 footer {
   text-align: center;
   padding: 2rem;
